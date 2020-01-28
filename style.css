@@ -1,97 +1,106 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #eee;
 }
 
-strong{
+header>h3 {
+    text-align: center;
+    font-weight: 300;
+}
+
+strong {
     color: #1913a2;
 }
 
-div{
+div {
     display: inline-block;
 }
 
-#seccion-superior{
+#seccion-superior {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: baseline;
 }
 
-#left-side .elements-wrapper,#middle-side,#right-side,#bottom-side,#description-column,.description-row{
+#left-side .elements-wrapper,
+#middle-side,
+#right-side,
+#bottom-side,
+#description-column,
+.description-row {
     height: fit-content;
     display: flex;
     flex-wrap: wrap-reverse;
     outline: 1px dotted black;
 }
 
-#description-row{
+#description-row {
     flex-direction: column-reverse;
     width: 100%;
 }
 
-#description-row .element{
+#description-row .element {
     background-color: transparent;
 }
 
-#description-column{
+#description-column {
     flex-direction: column-reverse;
     width: fit-content;
 }
 
-#description-column .element, .description-row .element{
+#description-column .element,
+.description-row .element {
     background-color: transparent;
 }
 
-#left-side{
+#left-side {
     width: 110px;
     display: flex;
     flex-direction: column-reverse;
 }
 
-#left-side .elements-wrapper .element{
+#left-side .elements-wrapper .element {
     background-color: #689bff;
 }
 
-#middle-side{
+#middle-side {
     width: 550px;
 }
 
-#middle-side .element{
+#middle-side .element {
     background-color: #fd9a98;
 }
 
-#right-side{
+#right-side {
     width: 330px;
     justify-content: flex-end;
 }
 
-#right-side .element{
+#right-side .element {
     background-color: #fecb00;
 }
 
-#seccion-inferior{
+#seccion-inferior {
     width: 100%;
     display: flex;
 }
 
-#bottom-side{
+#bottom-side {}
 
-}
-
-#bottom-side .element{
+#bottom-side .element {
     background-color: #1fca21;
 }
 
-#description-wrapper span{
+#description-wrapper span {
     display: block;
 }
 
-.element{
+.element {
     width: 50px;
     height: 55px;
     margin: 1px;
@@ -99,11 +108,12 @@ div{
     text-align: center;
 }
 
-.n-atomico,.masa-atomica,.simbolo{
+.n-atomico,
+.masa-atomica,
+.simbolo {
     display: block;
 }
 
-.description{
+.description {
     color: #f00;
 }
-
